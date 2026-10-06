@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your PRs</title><link rel="stylesheet" href="/style.css"><script src="/app.js" type="module"></script></head>
+<body>
+<main>
+  <section class="card" aria-label="GitHub pull request activity">
+    <header>
+      <a class="identity" id="profile" target="_blank" rel="noreferrer">
+        <img id="avatar" width="64" height="64" alt="" hidden>
+        <span class="identity-copy"><span class="name-row"><span id="username">GitHub</span><span id="handle"></span></span><span id="total">Getting your pull requests…</span></span>
+      </a>
+      <button id="refresh" aria-label="Refresh GitHub activity" title="Refresh GitHub activity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.6-1L20 9M4 15l2.3 3A7 7 0 0 0 17.9 17"/></svg></button>
+    </header>
+    <div class="graph" id="graph" aria-busy="true"><div class="placeholder">Getting your PR history<span>The first visit takes a moment.</span></div></div>
+    <div id="tooltip" role="status" hidden></div>
+  </section>
+  <footer><span id="status" aria-live="polite">Checking GitHub…</span><span><a id="history-link" target="_blank" rel="noreferrer">Every PR, from the beginning <span aria-hidden="true">↗</span></a></span></footer>
+</main>
+</body></html>
